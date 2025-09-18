@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio | Esvin Samuel Culan Monterroso</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>
-            Eleve tu negocio digital a otro nivel 
-            <strong>con un Front-end de calidad!
-            </strong></h1>
-            <p>¡Hola! Soy Ana García, desarrolladora Front-end con
-                especialización en React, HTML y CSS. Ayudo a pequeños
-                 negocios y diseñadores a llevar a cabo buenas ideas.
-                  ¿Hablamos?
-
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="#">Inicio</a>
+            <a class="header__menu__link" href="https://github.com/samuelmonterroso47-af">Proyectos</a>
+            <a class="header__menu__link" href="https://www.linkedin.com/in/esvin-samuel">Contacto</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Analizo el futuro de tu negocio
+                <strong class="titulo-destaque">
+                    a través de tus datos.
+                </strong>
+            </h1>
+            <p class="presentacion__contenido__texto">
+                ¡Hola! Soy Esvin Samuel Culan Monterroso, analista de datos con experiencia en administración financiera. Actualmente, estoy formándome para convertirme en Científico de Datos y ayudo a empresas a tomar decisiones estratégicas basadas en el análisis financiero de sus datos. ¿Hablamos?
             </p>
-            <a href="https://instagram.com/">Instagram</a>
-            <a href="https://github.com/">GitHub</a>
-            <img src="Imagem.png" alt="Foto de Ana García desarrolando un proyecto">
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo">Accede a mis perfiles:</h2>
+                <a class="presentacion__enlaces__link" href="https://github.com/samuelmonterroso47-af" target="_blank">
+                    <img src="github_icon.svg" alt="ícono de GitHub">
+                    GitHub
+                </a>
+                <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/esvin-samuel" target="_blank">
+                    <img src="linkedin_icon.svg" alt="ícono de LinkedIn">
+                    LinkedIn
+                </a>
+                <a class="presentacion__enlaces__link" href="https://www.instagram.com/esvin_travel" target="_blank">
+                    <img src="instagram_icon.svg" alt="ícono de Instagram">
+                    Instagram
+                </a>
+            </div>
+        </section>
+        <img class="presentacion__imagen" src="Imagem.png" alt="Foto de Esvin Samuel Culan Monterroso trabajando">
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <p>Desarrollado por Esvin Samuel Culan Monterroso</p>
+    </footer>
 </body>
 </html>
