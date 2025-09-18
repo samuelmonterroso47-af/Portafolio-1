@@ -1,8 +1,154 @@
-body{
-    background-color: #000000;
-    color: #F6F6F6;
+/* Importación de la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reinicio de estilos básicos para consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-strong{
-    color: #22D4FD;
+body {
+    background-color: #1a1a2e; /* Fondo oscuro y elegante */
+    color: #e0e0e0; /* Color de texto claro */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos de la cabecera */
+.header {
+    padding: 2rem 5%;
+    background-color: #16213e; /* Un tono más oscuro para el header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header__menu__link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header__menu__link:hover {
+    color: #e94560; /* Color de acento al pasar el mouse */
+}
+
+/* Estilos de la sección principal (presentación) */
+.presentacion {
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    min-height: calc(100vh - 100px); /* Ocupa la mayor parte de la pantalla */
+}
+
+.presentacion__contenido {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.titulo-destaque {
+    color: #e94560;
+}
+
+.presentacion__contenido__texto {
+    font-size: 1.25rem;
+    color: #c0c0c0;
+}
+
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e0e0e0;
+}
+
+.presentacion__enlaces__link {
+    background-color: #0f3460;
+    color: #e0e0e0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 50%; /* Ancho ajustado para los enlaces */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: #16213e;
+    transform: translateY(-5px); /* Efecto 3D al pasar el mouse */
+}
+
+.presentacion__enlaces__link img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.presentacion__imagen {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #16213e;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 1200px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 5%;
+    }
+
+    .presentacion__contenido {
+        width: 100%;
+        align-items: center;
+    }
+
+    .presentacion__imagen {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .presentacion__enlaces {
+        align-items: center;
+    }
+
+    .presentacion__enlaces__link {
+        width: 60%;
+    }
 }
