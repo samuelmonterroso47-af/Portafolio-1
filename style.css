@@ -126,29 +126,49 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Media Queries para diseño responsivo */
+/* Media query mejorada para tu proyecto */
 @media (max-width: 1200px) {
     .presentacion {
         flex-direction: column;
         text-align: center;
         padding: 3rem 5%;
+        width: 100%; /* Asegura que ocupe el 100% del ancho */
+        max-width: 100vw; /* No más ancho que la ventana */
     }
 
     .presentacion__contenido {
-        width: 70%;
+        width: 90%; /* Más ancho para mejor uso del espacio */
+        max-width: 100%; /* Nunca más ancho que el contenedor */
         align-items: center;
     }
 
     .presentacion__imagen {
-        width: 80%;
-        max-width: 350px;
+        width: 100%;
+        max-width: 300px; /* Controla el tamaño máximo */
     }
 
     .presentacion__enlaces {
         align-items: center;
+        width: 100%;
     }
 
     .presentacion__enlaces__link {
-        width: 60%;
+        width: 80%; /* Ocupa más espacio */
+        max-width: 300px; /* Pero con límite máximo */
+    }
+}
+
+/* Para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .presentacion {
+        padding: 2rem 5%;
+    }
+    
+    .presentacion__contenido {
+        width: 95%; /* Aún más ancho en móviles */
+    }
+    
+    .presentacion__enlaces__link {
+        width: 95%;
     }
 }
