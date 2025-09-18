@@ -8,11 +8,17 @@
     box-sizing: border-box;
 }
 
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #1a1a2e; /* Fondo oscuro y elegante */
     color: #e0e0e0; /* Color de texto claro */
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    max-width: 100vw;
 }
 
 /* Estilos de la cabecera */
@@ -20,12 +26,14 @@ body {
     padding: 2rem 5%;
     background-color: #16213e; /* Un tono más oscuro para el header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .header__menu {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .header__menu__link {
@@ -48,6 +56,8 @@ body {
     align-items: center;
     gap: 4rem;
     min-height: calc(100vh - 100px); /* Ocupa la mayor parte de la pantalla */
+    width: 100%;
+    max-width: 100vw;
 }
 
 .presentacion__contenido {
@@ -124,51 +134,88 @@ body {
     font-size: 0.9rem;
     color: #e0e0e0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
-/* Media query mejorada para tu proyecto */
+/* Media Queries para diseño responsivo */
 @media (max-width: 1200px) {
     .presentacion {
         flex-direction: column;
         text-align: center;
         padding: 3rem 5%;
-        width: 100%; /* Asegura que ocupe el 100% del ancho */
-        max-width: 100vw; /* No más ancho que la ventana */
     }
 
     .presentacion__contenido {
-        width: 90%; /* Más ancho para mejor uso del espacio */
-        max-width: 100%; /* Nunca más ancho que el contenedor */
+        width: 90%;
         align-items: center;
     }
 
     .presentacion__imagen {
-        width: 100%;
-        max-width: 300px; /* Controla el tamaño máximo */
+        width: 80%;
+        max-width: 350px;
+        margin-top: 2rem;
     }
 
     .presentacion__enlaces {
         align-items: center;
-        width: 100%;
     }
 
     .presentacion__enlaces__link {
-        width: 80%; /* Ocupa más espacio */
-        max-width: 300px; /* Pero con límite máximo */
+        width: 80%;
+    }
+    
+    .header__menu {
+        gap: 2rem;
     }
 }
 
-/* Para dispositivos más pequeños */
 @media (max-width: 768px) {
     .presentacion {
         padding: 2rem 5%;
     }
     
     .presentacion__contenido {
-        width: 95%; /* Aún más ancho en móviles */
+        width: 100%;
+    }
+    
+    .presentacion__contenido__titulo {
+        font-size: 2rem;
+    }
+    
+    .presentacion__contenido__texto {
+        font-size: 1.1rem;
     }
     
     .presentacion__enlaces__link {
-        width: 95%;
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+    
+    .header__menu {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .header__menu__link {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion__contenido__titulo {
+        font-size: 1.8rem;
+    }
+    
+    .presentacion__contenido__texto {
+        font-size: 1rem;
+    }
+    
+    .presentacion__enlaces__subtitulo {
+        font-size: 1.1rem;
+    }
+    
+    .header {
+        padding: 1.5rem 5%;
     }
 }
