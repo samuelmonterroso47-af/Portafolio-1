@@ -219,3 +219,26 @@ body {
         padding: 1.5rem 5%;
     }
 }
+
+/* Asegurar que las imágenes se carguen correctamente desde la carpeta assets */
+.presentacion__enlaces__link img {
+    /* Ajustar el tamaño de los iconos si es necesario */
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Estilos adicionales para mejorar la visualización en móviles */
+@media (max-width: 360px) {
+    .presentacion__contenido__titulo {
+        font-size: 1.6rem;
+    }
+    
+    .presentacion__enlaces__link {
+        font-size: 0.9rem;
+    }
+    
+    .header__menu__link {
+        font-size: 1rem;
+    }
+}
