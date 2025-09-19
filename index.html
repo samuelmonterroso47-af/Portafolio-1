@@ -3,119 +3,498 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Esvin Samuel Culan Monterroso</title>
+    <title>Esvin Samuel Culan Monterroso | Analista de Datos & Científico de Datos</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Portafolio de Esvin Samuel Culan Monterroso, analista de datos y especialista en administración financiera.">
-    <meta name="keywords" content="analista de datos, científico de datos, administración financiera, portafolio, Esvin Samuel Culan Monterroso">
+    <!-- SEO Mejorado -->
+    <meta name="description" content="Analista de datos especializado en administración financiera y ciencia de datos. Transformo datos en decisiones estratégicas para el crecimiento empresarial.">
+    <meta name="keywords" content="analista de datos, científico de datos, administración financiera, Python, SQL, Power BI, Guatemala">
     <meta name="author" content="Esvin Samuel Culan Monterroso">
+    <meta property="og:title" content="Esvin Samuel Culan Monterroso - Analista de Datos">
+    <meta property="og:description" content="Especialista en análisis de datos y administración financiera">
+    <meta property="og:type" content="website">
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Tipografía profesional -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Iconos modernos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
+
 <body>
     <!-- HEADER -->
-    <header class="header">
-        <nav class="header__menu" aria-label="Menú principal">
-            <a class="header__menu__link" href="#">Inicio</a>
-            <a class="header__menu__link" href="#proyectos">Proyectos</a>
-            <a class="header__menu__link" href="#habilidades">Habilidades</a>
-            <a class="header__menu__link" href="#contacto">Contacto</a>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo">ESC.dev</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
     <!-- HERO -->
-    <main class="presentacion">
-        <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo">
-                Analizo el futuro de tu negocio
-                <strong class="titulo-destaque">
-                    a través de tus datos.
-                </strong>
-            </h1>
-            <p class="presentacion__contenido__texto">
-                ¡Hola! Soy <strong>Esvin Samuel Culan Monterroso</strong>, analista de datos con experiencia en administración financiera. 
-                Actualmente, estoy formándome para convertirme en Científico de Datos y ayudo a empresas a tomar decisiones estratégicas basadas en el análisis financiero de sus datos. 
-                ¿Hablamos?
-            </p>
-            <a class="presentacion__cta" href="mailto:esvin.samuel@gmail.com">📩 Contáctame</a>
-            <div class="presentacion__enlaces">
-                <h2 class="presentacion__enlaces__subtitulo">Accede a mis perfiles:</h2>
-                <a class="presentacion__enlaces__link" href="https://github.com/samuelmonterroso47-af" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/git.png" alt="Ícono de GitHub">
-                    GitHub
-                </a>
-                <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/esvin-samuel" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/linkedin.png" alt="Ícono de LinkedIn">
-                    LinkedIn
-                </a>
-                <a class="presentacion__enlaces__link" href="https://www.instagram.com/esvin_travel" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/Instagram.png" alt="Ícono de Instagram">
-                    Instagram
-                </a>
-            </div>
-        </section>
-        <img class="presentacion__imagen" src="assets/Imagem.png" alt="Foto de Esvin Samuel Culan Monterroso trabajando" loading="lazy">
-    </main>
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1>
+                    Transformo <span class="highlight">datos</span> en 
+                    decisiones estratégicas
+                </h1>
+                <p class="hero-description">
+                    Soy <strong>Esvin Samuel Culan Monterroso</strong>, analista de datos especializado en administración financiera. 
+                    Ayudo a empresas a descubrir insights valiosos en sus datos y a tomar decisiones basadas en evidencia para impulsar su crecimiento.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Años experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfacción</span>
+                    </div>
+                </div>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <div class="proyectos__grid">
-            <div class="proyecto">
-                <h3>📊 Dashboard Financiero</h3>
-                <p>Visualización interactiva de KPIs financieros con Power BI.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Trabajemos juntos
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        Ver mi trabajo
+                    </a>
+                </div>
             </div>
-            <div class="proyecto">
-                <h3>⚙️ Automatización de Reportes</h3>
-                <p>Automatización de flujos de datos con n8n y Google Sheets.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
-            </div>
-            <div class="proyecto">
-                <h3>📈 Análisis de Ventas</h3>
-                <p>Modelo de predicción de ventas con Python y regresión lineal.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
+
+            <div class="hero-image fade-in">
+                <img src="assets/Imagem.png" alt="Esvin Samuel Culan Monterroso" class="profile-image">
+                <div class="floating-card card-top">
+                    <i class="fas fa-chart-line" style="color: var(--accent-color); font-size: 1.5rem;"></i>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem;">Análisis de datos</div>
+                </div>
+                <div class="floating-card card-bottom">
+                    <i class="fas fa-brain" style="color: var(--secondary-color); font-size: 1.5rem;"></i>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem;">Machine Learning</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- PROYECTOS -->
+    <section class="section" id="projects">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">
+                Algunos de mis trabajos más recientes donde he aplicado análisis de datos 
+                para resolver problemas empresariales reales
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Dashboard Financiero Ejecutivo</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Excel</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Dashboard interactivo que centraliza KPIs financieros críticos, proporcionando 
+                        insights en tiempo real sobre rentabilidad, flujo de caja y performance por región.
+                        Redujo el tiempo de generación de reportes en 70%.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver demo
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-icon">⚙️</div>
+                    <h3 class="project-title">Sistema de Automatización ETL</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Google Sheets</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Automatización completa del proceso de extracción, transformación y carga de datos 
+                        financieros. Integra múltiples fuentes de datos y genera reportes automáticos, 
+                        eliminando tareas manuales repetitivas.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver más
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">Modelo Predictivo de Ventas</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Modelo de machine learning que predice ventas futuras con 85% de precisión, 
+                        considerando factores estacionales, promociones y tendencias del mercado. 
+                        Optimiza la planificación de inventario y estrategias comerciales.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver análisis
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <!-- HABILIDADES -->
-    <section id="habilidades" class="habilidades">
-        <h2>Habilidades Técnicas</h2>
-        <ul class="habilidades__lista">
-            <li>🐍 Python (Pandas, NumPy, Scikit-learn)</li>
-            <li>💾 SQL (MySQL, PostgreSQL)</li>
-            <li>📊 Power BI & Excel avanzado</li>
-            <li>📈 Análisis financiero</li>
-            <li>🤖 Automatización con n8n</li>
-            <li>🌐 HTML, CSS y JavaScript</li>
-        </ul>
+    <section class="section" id="skills">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <p class="section-subtitle">
+                Tecnologías y herramientas que domino para transformar datos en valor empresarial
+            </p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <i class="fas fa-code skill-category-icon"></i>
+                    Programación & Análisis
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">R</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <i class="fas fa-chart-bar skill-category-icon"></i>
+                    Visualización & BI
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Power BI</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Excel Avanzado</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Tableau</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Matplotlib/Plotly</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <i class="fas fa-robot skill-category-icon"></i>
+                    Machine Learning
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Scikit-learn</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Pandas/NumPy</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">TensorFlow</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Estadística</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in">
+                <div class="skill-category-title">
+                    <i class="fas fa-cogs skill-category-icon"></i>
+                    Herramientas & Finanzas
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Análisis Financiero</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">n8n Automation</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git & GitHub</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Google Analytics</span>
+                        <div class="skill-level">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <p>¿Quieres trabajar conmigo o tienes una propuesta? Escríbeme:</p>
-        <form class="contacto__form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section class="section" id="contact">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Hablemos</h2>
+            <p class="section-subtitle">
+                ¿Tienes un proyecto interesante o quieres colaborar? 
+                Estoy siempre abierto a nuevas oportunidades
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3>Email</h3>
+                        <p>esvin.samuel@gmail.com</p>
+                        <a href="mailto:esvin.samuel@gmail.com" class="btn btn-primary" style="margin-top: 1rem;">
+                            Enviar email
+                        </a>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <h3>Teléfono</h3>
+                        <p>+502 1234-5678</p>
+                        <a href="tel:+50212345678" class="btn btn-secondary" style="margin-top: 1rem;">
+                            Llamar
+                        </a>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h3>Ubicación</h3>
+                        <p>Guatemala City, GT</p>
+                        <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">
+                            Ver mapa
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/samuelmonterroso47-af" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/esvin-samuel" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/esvin_travel" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="company" class="form-label">Empresa (opcional)</label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Tu empresa">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar mensaje
+                </button>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2025 Esvin Samuel Culan Monterroso </p>
+        <div class="footer-content">
+            <p>&copy; 2025 Esvin Samuel Culan Monterroso. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
