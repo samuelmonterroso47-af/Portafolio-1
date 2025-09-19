@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Esvin Samuel Culan Monterroso</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Portafolio de Esvin Samuel Culan Monterroso, analista de datos y especialista en administración financiera.">
+    <meta name="keywords" content="analista de datos, científico de datos, administración financiera, portafolio, Esvin Samuel Culan Monterroso">
+    <meta name="author" content="Esvin Samuel Culan Monterroso">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <nav class="header__menu">
+        <nav class="header__menu" aria-label="Menú principal">
             <a class="header__menu__link" href="#">Inicio</a>
-            <a class="header__menu__link" href="https://github.com/samuelmonterroso47-af">Proyectos</a>
-            <a class="header__menu__link" href="https://www.linkedin.com/in/esvin-samuel">Contacto</a>
+            <a class="header__menu__link" href="#proyectos">Proyectos</a>
+            <a class="header__menu__link" href="#habilidades">Habilidades</a>
+            <a class="header__menu__link" href="#contacto">Contacto</a>
         </nav>
     </header>
+
+    <!-- HERO -->
     <main class="presentacion">
         <section class="presentacion__contenido">
             <h1 class="presentacion__contenido__titulo">
@@ -26,28 +42,80 @@
                 </strong>
             </h1>
             <p class="presentacion__contenido__texto">
-                ¡Hola! Soy Esvin Samuel Culan Monterroso, analista de datos con experiencia en administración financiera. Actualmente, estoy formándome para convertirme en Científico de Datos y ayudo a empresas a tomar decisiones estratégicas basadas en el análisis financiero de sus datos. ¿Hablamos?
+                ¡Hola! Soy <strong>Esvin Samuel Culan Monterroso</strong>, analista de datos con experiencia en administración financiera. 
+                Actualmente, estoy formándome para convertirme en Científico de Datos y ayudo a empresas a tomar decisiones estratégicas basadas en el análisis financiero de sus datos. 
+                ¿Hablamos?
             </p>
+            <a class="presentacion__cta" href="mailto:esvin.samuel@gmail.com">📩 Contáctame</a>
             <div class="presentacion__enlaces">
                 <h2 class="presentacion__enlaces__subtitulo">Accede a mis perfiles:</h2>
-                <a class="presentacion__enlaces__link" href="https://github.com/samuelmonterroso47-af" target="_blank">
-                    <img src="assets/git.png" alt="ícono de GitHub">
+                <a class="presentacion__enlaces__link" href="https://github.com/samuelmonterroso47-af" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/git.png" alt="Ícono de GitHub">
                     GitHub
                 </a>
-                <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/esvin-samuel" target="_blank">
-                    <img src="assets/linkedin.png" alt="ícono de LinkedIn">
+                <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/esvin-samuel" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/linkedin.png" alt="Ícono de LinkedIn">
                     LinkedIn
                 </a>
-                <a class="presentacion__enlaces__link" href="https://www.instagram.com/esvin_travel" target="_blank">
-                    <img src="assets/Instagram.png" alt="ícono de Instagram">
+                <a class="presentacion__enlaces__link" href="https://www.instagram.com/esvin_travel" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Instagram.png" alt="Ícono de Instagram">
                     Instagram
                 </a>
             </div>
         </section>
-        <img class="presentacion__imagen" src="assets/Imagem.png" alt="Foto de Esvin Samuel Culan Monterroso trabajando">
+        <img class="presentacion__imagen" src="assets/Imagem.png" alt="Foto de Esvin Samuel Culan Monterroso trabajando" loading="lazy">
     </main>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos__grid">
+            <div class="proyecto">
+                <h3>📊 Dashboard Financiero</h3>
+                <p>Visualización interactiva de KPIs financieros con Power BI.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
+            </div>
+            <div class="proyecto">
+                <h3>⚙️ Automatización de Reportes</h3>
+                <p>Automatización de flujos de datos con n8n y Google Sheets.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
+            </div>
+            <div class="proyecto">
+                <h3>📈 Análisis de Ventas</h3>
+                <p>Modelo de predicción de ventas con Python y regresión lineal.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul class="habilidades__lista">
+            <li>🐍 Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>💾 SQL (MySQL, PostgreSQL)</li>
+            <li>📊 Power BI & Excel avanzado</li>
+            <li>📈 Análisis financiero</li>
+            <li>🤖 Automatización con n8n</li>
+            <li>🌐 HTML, CSS y JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres trabajar conmigo o tienes una propuesta? Escríbeme:</p>
+        <form class="contacto__form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>Desarrollado por Esvin Samuel Culan Monterroso</p>
+        <p>© 2025 Esvin Samuel Culan Monterroso </p>
     </footer>
 </body>
 </html>
